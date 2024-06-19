@@ -1,0 +1,15 @@
+name: Cam Loader's Masters Portfolio
+on: [push]
+jobs:
+  Applied-Algorithms:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd Applied-Algorithms; ./main.sh
+  Data-Mining:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd Data-Mining; ./main.sh
+  Automata-and-Formal-Languages:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd Automata-and-Formal-Languages; ./main.sh
