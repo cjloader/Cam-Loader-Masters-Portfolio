@@ -1,1 +1,3 @@
-!# /usr/bin/bash
+#!/usr/bin/bash
+
+echo "test"
