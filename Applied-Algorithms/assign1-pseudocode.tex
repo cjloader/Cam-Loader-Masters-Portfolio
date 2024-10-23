@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+
+\title{CS 620: Assignment 1\\ Recursive Palindrome - Questions \& Pseudocode}
+\author{Cam J. Loader}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item Show how this algorithm works on the following strings using pseudo code:
+	\begin{enumerate}
+	   \item rester
+	    \begin{itemize}
+	    	\item String "rester" entered into the console
+	    	\item checks if it is Q, if not isPalidrome(rester) is called
+	    	\item checks that 'r' matches 'r' and calls isPalindrome('este')
+	    	\item checks 'e' matches 'e', calls isPalindrome('st')
+	    	\item fails on 's' compared to 't' and returns false    
+	    \end{itemize}
+	  \item able was i ere i saw elba
+	  \begin{itemize}
+	  	\item String "able was i ere i saw elba" entered in the console
+	  	\item check if it is Q, if not isPalidrome('able was i ere i saw elba') is called
+        \item checks that 'a' matches 'a' and calls  isPalindrome('ble was i ere i saw elb')
+        \item checks that 'b' matches 'b and calls    isPalindrome('le was i ere i saw el')
+	  	\item checks that 'l' matches 'l' and calls isPalindrome('e was i ere i saw e')
+	  	\item checks that 'e' matches 'e' and calls  isPalindrome(' was i ere i saw ')
+	  	\item checks that ' ' matches ' ' and calls  isPalindrome(' was i ere i saw ')
+	  	\item checks that 'w' matches 'w' and calls  isPalindrome('as i ere i sa')
+	  	\item checks that 'a' matches 'a' and calls  isPalindrome('s i ere i s ')
+	  	\item checks that 's' matches '' and calls  isPalindrome(' was i ere i saw ')
+	  	\item checks that ' ' matches ' ' and calls  isPalindrome('i ere i')
+	  	\item checks that 'i' matches 'i' and calls  isPalindrome(' ere ')
+	  	\item checks that ' ' matches ' ' and calls  isPalindrome('ere')
+	  	\item checks that 'e' matches 'e' and calls  isPalindrome('r')
+	  	\item 'r' is the last char, return true
+	  \end{itemize}
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}
